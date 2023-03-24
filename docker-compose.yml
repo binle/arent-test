@@ -1,0 +1,19 @@
+version: '3.7'
+
+networks:
+  ArentTestNetwork:
+
+services:
+  arent-test-web:
+    container_name: arent-test-web
+    build:
+      context: ./
+      args:
+        - BACKEND_PREFIX_URL=http://localhost:9090
+    logging:
+      options:
+        max-size: 100m
+    ports:
+      - 8080:8080
+    networks:
+      - ArentTestNetwork
