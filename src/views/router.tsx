@@ -56,7 +56,7 @@ export const AppRouter = ({ accountInfo }: IUserData) => (
       <Route path={ROUTING.column} element={<ColumnPage />} />
 
       {/* home page */}
-      <Route path={ROUTING.home} element={<HomePage />} />
+      <Route path={ROUTING.home} element={accountInfo?.id ? <HomePage /> : <AuthPage />} />
 
       {/* coming soon routing */}
       <Route path={ROUTING.comingSoon} element={<ComingSoonComponent />} />

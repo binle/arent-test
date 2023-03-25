@@ -15,7 +15,7 @@ const App = (props: IApplicationContextData) => {
       <StrictMode>
         <BrowserRouter>
           <ApplicationContext.Provider value={{ contextData: appState, setContextData: setAppState }}>
-            <AppRouter />
+            <AppRouter accountInfo={appState.userData?.accountInfo} />
           </ApplicationContext.Provider>
         </BrowserRouter>
         <LoadingComponent message="..." />

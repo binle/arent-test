@@ -2,6 +2,7 @@ import { AccountDto } from './account.definition';
 import { NotificationDto } from './notification.definition';
 
 export * from './account.definition';
+export * from './health.definition';
 export * from './notification.definition';
 
 export interface IUserData {

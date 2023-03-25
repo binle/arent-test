@@ -1,0 +1,184 @@
+@import './../variable.scss';
+
+.home-page {
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .home-overview {
+    width: 100%;
+    height: 312px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    .achievement {
+      height: 100%;
+      width: 540px;
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .achievement-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .ant-space {
+        z-index: 1;
+        .ant-progress-circle {
+          .ant-progress-circle-path {
+            stroke: $colorLight;
+            stroke-width: 2px;
+            box-shadow: 0px 0px 6px #fc7400;
+          }
+        }
+      }
+
+      .achievement-info {
+        font-family: 'Inter';
+        color: $colorLight;
+        font-style: normal;
+
+        .achievement-date {
+          font-weight: 400;
+          font-size: 18px;
+          margin-right: 4px;
+        }
+        .achievement-percent {
+          font-weight: 400;
+          font-size: 25px;
+        }
+      }
+    }
+    .body-fat-graph {
+      flex: 1;
+      height: 100%;
+      background-color: $colorDark600;
+    }
+  }
+
+  .home-meal {
+    width: $appContentWidth + 10px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .meal-input {
+      width: 100%;
+      height: 180px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .hexagon-button {
+        background-image: url('./../../images//hexagon.png');
+        height: 134px;
+        width: 116px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 84px;
+        cursor: pointer;
+
+        span {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: $colorLight;
+          margin-top: 5px;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .meal-history {
+      width: 100%;
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .item {
+          width: 242px;
+          height: 242px;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: flex-start;
+
+          padding: 4px;
+
+          .image {
+            position: absolute;
+            width: 234px;
+            height: 234px;
+            object-fit: cover;
+          }
+          .content {
+            width: 120px;
+            height: 32px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            background-color: $colorPrimary300;
+            font-family: 'Inter';
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $colorLight;
+            z-index: 1;
+
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 8px;
+          }
+        }
+      }
+      .btn-primary {
+        margin-top: 24px;
+        margin-bottom: 64px;
+        height: 56px;
+        width: 296px;
+      }
+    }
+  }
+}

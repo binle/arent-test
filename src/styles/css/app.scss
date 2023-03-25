@@ -1,48 +1,43 @@
 @font-face {
   font-family: 'Inter';
-  src: local('Poppins-Bold'), url('./../fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+  src: local('Inter'), url('./../fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 900;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Black.otf') format('otf');
 }
 
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 700;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Bold.otf') format('otf');
 }
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 500;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Medium.otf') format('otf');
 }
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 400;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Regular.otf') format('otf');
 }
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 300;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Light.otf') format('otf');
 }
 @font-face {
   font-family: 'NotoSansJP';
-  font-style: normal;
   font-weight: 100;
   src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Thin.otf') format('otf');
 }
 
 @import './variable.scss';
 @import './loading.scss';
+@import './common.scss';
 
 // start CSS reset!
 *,
@@ -53,6 +48,7 @@
 
 body {
   font-family: 'NotoSansJP';
+  font-style: normal;
   overflow: hidden;
 
   display: flex;
@@ -79,17 +75,5 @@ body {
 }
 
 @import './layout.scss';
-
 @import './pages/auth.scss';
-
-.btn-primary {
-  background: $colorPrimary300400;
-  cursor: pointer;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  width: 296px;
-  border: none;
-}
+@import './pages/home.scss';
