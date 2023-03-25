@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Poppins-Bold'), url('./../fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 900;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Black.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Bold.otf') format('otf');
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 500;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Medium.otf') format('otf');
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Regular.otf') format('otf');
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 300;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Light.otf') format('otf');
+}
+@font-face {
+  font-family: 'NotoSansJP';
+  font-style: normal;
+  font-weight: 100;
+  src: local('NotoSansJP'), url('./../fonts/NotoSansJP-Thin.otf') format('otf');
+}
+
+@import './variable.scss';
+@import './loading.scss';
+
+// start CSS reset!
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'NotoSansJP';
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+
+  #root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+  }
+}
+
+@import './layout.scss';
+
+@import './pages/auth.scss';
+
+.btn-primary {
+  background: $colorPrimary300400;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 296px;
+  border: none;
+}

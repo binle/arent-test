@@ -1,0 +1,208 @@
+@import './variable.scss';
+
+.application {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: $appWidth;
+
+  .application-header {
+    height: $appHeaderHeight;
+    width: 100%;
+    background-color: $colorDark500;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .header-content {
+      width: $appContentWidth;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      margin-right: 45px;
+      font-weight: 300;
+
+      .header-content-right {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        color: $colorLight;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &.menu-icon {
+          width: 160px;
+
+          img {
+            margin-right: 8px;
+            margin-left: 11px;
+          }
+        }
+
+        &.notice {
+          position: relative;
+
+          .badge-count {
+            position: absolute;
+            top: -2px;
+            left: 35px;
+            background-color: $colorPrimary500;
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            font-size: 10px;
+            font-weight: 400;
+            font-family: 'Inter';
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .menu {
+        cursor: pointer;
+      }
+    }
+  }
+  .application-content {
+    width: $appWidth;
+    // margin-top: $appHeaderHeight;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .application-footer {
+    height: 128px;
+    width: 100%;
+    background-color: $colorDark500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 300;
+
+    .footer-content {
+      width: $appContentWidth;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 45px;
+
+        color: $colorLight;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.app-menu-drawer {
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  .ant-drawer-header {
+    display: none;
+    padding: 0;
+  }
+  .ant-drawer-body {
+    padding: 0;
+    background-color: $colorGray400;
+
+    .app-menu-drawer-content {
+      .close-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        img {
+          background-color: $colorDark600;
+        }
+      }
+
+      .auth {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 72px;
+        border-top: rgba(256, 256, 256, 0.15) 1px solid;
+        padding-left: 32px;
+        color: $colorLight;
+        cursor: pointer;
+
+        span {
+          margin-right: 10px;
+        }
+
+        span.anticon-logout span.anticon-login {
+          svg {
+            color: $colorPrimary500;
+          }
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 72px;
+        border-top: rgba(256, 256, 256, 0.15) 1px solid;
+        padding-left: 32px;
+
+        color: $colorLight;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
