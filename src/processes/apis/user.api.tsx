@@ -1,3 +1,4 @@
+import { message } from 'antd';
 import { JWT_AUTHENTICATION, TestAccount } from '../../constants';
 import { IUserData, LoginResponseBodyDto } from '../../definitions';
 import { axiosClient } from './_axios-client';
@@ -12,7 +13,10 @@ export const asyncGetCurrentUserInformation = async (): Promise<IUserData | unde
   }
   try {
     return (await axiosClient.get('/api/user/info')).data;
-  } catch (error) {}
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
+    message.open({ type: 'error', content: error.message });
+  }
 };
 
 export const asyncLogin = async (username: string, password: string): Promise<LoginResponseBodyDto> => {

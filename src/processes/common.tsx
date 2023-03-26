@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable @typescript-eslint/no-unnecessary-type-constraint */
 import { APP_EVENTS } from '../constants';
 import { LoadingEmitData } from '../definitions';
 

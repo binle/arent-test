@@ -27,7 +27,7 @@
     ],
     "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     "react/react-in-jsx-scope": "off",
-    "camelcase": "error",
+    "camelcase": 0,
     "spaced-comment": "error",
     "quotes": ["error", "single"],
     "no-duplicate-imports": "error"
