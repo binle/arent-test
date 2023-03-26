@@ -1,0 +1,164 @@
+@import './../variable.scss';
+.column-page {
+  width: 960px;
+  margin-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .recommend {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 256px;
+
+    .recommend-item {
+      width: 216px;
+      height: 144px;
+      background-color: $colorDark600;
+      padding: 24px 8px 22px;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .item-title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        color: $colorPrimary300;
+      }
+
+      .line {
+        width: 56px;
+        border-top: 1px solid $colorLight;
+        margin-top: 10px;
+        margin-top: 8px;
+      }
+
+      .item-message {
+        color: $colorLight;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  .column-list {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 234px;
+
+        margin-right: 8px;
+        margin-bottom: 18px;
+
+        position: relative;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+
+        .image {
+          width: 234px;
+          height: 145px;
+          object-fit: cover;
+        }
+
+        .content {
+          position: absolute;
+          top: 121px;
+          left: 0;
+          width: 144px;
+          height: 24px;
+          background-color: $colorPrimary300;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-family: 'Inter';
+          font-weight: 400;
+          font-size: 15px;
+          color: $colorLight;
+        }
+
+        .footer {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+
+          .title {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+
+            font-weight: 300;
+            font-size: 15px;
+            color: $colorDark500;
+          }
+
+          .tag {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .tag-item {
+              cursor: pointer;
+              margin-right: 5px;
+              font-weight: 300;
+              font-size: 12px;
+              color: $colorPrimary400;
+
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btn-primary {
+      margin-top: 24px;
+      margin-bottom: 64px;
+      height: 56px;
+      width: 296px;
+    }
+  }
+}

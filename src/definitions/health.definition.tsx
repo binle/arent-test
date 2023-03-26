@@ -51,3 +51,13 @@ export interface DiaryDto {
 export interface MyDiaryResponseBodyDto {
   list: DiaryDto[];
 }
+
+export interface ColumnDataDto {
+  time: Date;
+  title: string;
+  tags: string[];
+  imageUrl: string;
+}
+export interface ColumnDataResponseBodyDto {
+  list: ColumnDataDto[];
+}

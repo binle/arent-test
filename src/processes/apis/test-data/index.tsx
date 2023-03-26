@@ -1,6 +1,7 @@
 import {
   AchievementResponseBodyDto,
   BodyGraphResponseBodyDto,
+  ColumnDataResponseBodyDto,
   MealHistoryResponseBodyDto,
   MealTypeEnum,
   MyDiaryResponseBodyDto,
@@ -13,6 +14,14 @@ import mealHistoryLunchImage1 from './images/l01.jpg';
 import mealHistoryDinnerImage1 from './images/d02.jpg';
 import mealHistorySnackImage1 from './images/m02.jpg';
 import mealHistorySnackImage2 from './images/m03.jpg';
+import columnDataImage1 from './images/column-1.jpg';
+import columnDataImage2 from './images/column-2.jpg';
+import columnDataImage3 from './images/column-3.jpg';
+import columnDataImage4 from './images/column-4.jpg';
+import columnDataImage5 from './images/column-5.jpg';
+import columnDataImage6 from './images/column-6.jpg';
+import columnDataImage7 from './images/column-7.jpg';
+import columnDataImage8 from './images/column-8.jpg';
 
 export const localTestData: {
   achievementByDate: AchievementResponseBodyDto;
@@ -20,6 +29,7 @@ export const localTestData: {
   mealHistory: MealHistoryResponseBodyDto;
   myExercise: MyExerciseResponseBodyDto;
   myDiary: MyDiaryResponseBodyDto;
+  columnData: ColumnDataResponseBodyDto;
 } = {
   achievementByDate: { percent: 75, imageUrl: achievementByDateImage1 },
   bodyGraph: {
@@ -142,6 +152,108 @@ export const localTestData: {
         title: '私の日記の記録が一部表示されます。',
         description:
           'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+    ],
+  },
+  columnData: {
+    list: [
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage1,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage2,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage3,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage4,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage5,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage6,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage7,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage8,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage1,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage2,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage3,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage4,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage5,
+      },
+      {
+        time: new Date(),
+        title:
+          '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメ',
+        tags: ['魚料理', '和食', 'DHA'],
+        imageUrl: columnDataImage6,
       },
     ],
   },

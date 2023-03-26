@@ -2,6 +2,7 @@ import { JWT_AUTHENTICATION, TestAccount } from '../../constants';
 import {
   AchievementResponseBodyDto,
   BodyGraphResponseBodyDto,
+  ColumnDataResponseBodyDto,
   GraphTimeEnum,
   MealHistoryResponseBodyDto,
   MyDiaryResponseBodyDto,
@@ -94,6 +95,22 @@ export const asyncGetMyDiary = async (
   return (
     await axiosClient.get<MyDiaryResponseBodyDto>('/api/health/my-diary', {
       params: { fromDate, offset, limit },
+    })
+  ).data;
+};
+
+export const asyncGetColumnData = async (offset?: number, limit?: number): Promise<ColumnDataResponseBodyDto> => {
+  const jwt = localStorage.getItem(JWT_AUTHENTICATION);
+  if (jwt === TestAccount) {
+    if (!offset) {
+      return localTestData.columnData;
+    }
+    return { list: [] };
+  }
+
+  return (
+    await axiosClient.get<ColumnDataResponseBodyDto>('/api/health/my-diary', {
+      params: { offset, limit },
     })
   ).data;
 };
