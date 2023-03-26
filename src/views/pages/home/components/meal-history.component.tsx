@@ -14,7 +14,7 @@ export const MealHistoryComponent = ({
         {mealHistoryData.map((item) => {
           const text = `${moment(item.date).format('MM.DD')}.${item.type}`;
           return (
-            <div className="item">
+            <div className="item" key={text}>
               <img className="image" src={item.imageUrl} alt={text} />
               <div className="content">
                 <span>{text}</span>

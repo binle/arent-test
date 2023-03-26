@@ -3,18 +3,23 @@ import {
   BodyGraphResponseBodyDto,
   MealHistoryResponseBodyDto,
   MealTypeEnum,
+  MyDiaryResponseBodyDto,
+  MyExerciseResponseBodyDto,
 } from '../../../definitions';
 
 import achievementByDateImage1 from './images/d01.jpg';
 import mealHistoryMorningImage1 from './images/m01.jpg';
-import mealHistoryLunchImage1 from './images/m01.jpg';
-import mealHistoryDinnerImage1 from './images/m01.jpg';
-import mealHistorySnackImage1 from './images/m01.jpg';
+import mealHistoryLunchImage1 from './images/l01.jpg';
+import mealHistoryDinnerImage1 from './images/d02.jpg';
+import mealHistorySnackImage1 from './images/m02.jpg';
+import mealHistorySnackImage2 from './images/m03.jpg';
 
-export const homeTestData: {
+export const localTestData: {
   achievementByDate: AchievementResponseBodyDto;
   bodyGraph: BodyGraphResponseBodyDto;
   mealHistory: MealHistoryResponseBodyDto;
+  myExercise: MyExerciseResponseBodyDto;
+  myDiary: MyDiaryResponseBodyDto;
 } = {
   achievementByDate: { percent: 75, imageUrl: achievementByDateImage1 },
   bodyGraph: {
@@ -39,7 +44,105 @@ export const homeTestData: {
       { date: new Date(), imageUrl: mealHistoryLunchImage1, type: MealTypeEnum.Lunch },
       { date: new Date(), imageUrl: mealHistoryDinnerImage1, type: MealTypeEnum.Dinner },
       { date: new Date(), imageUrl: mealHistorySnackImage1, type: MealTypeEnum.Snack },
-      { date: new Date(), imageUrl: mealHistorySnackImage1, type: MealTypeEnum.Snack },
+      { date: new Date(), imageUrl: mealHistorySnackImage2, type: MealTypeEnum.Snack },
+    ],
+  },
+  myExercise: {
+    list: [
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+      { title: '家事全般（立位・軽い）', timeInMinutes: 10, calories: 26000 },
+    ],
+  },
+  myDiary: {
+    list: [
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description: 'テキストテキストテキストテキス',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
+      {
+        time: new Date(),
+        title: '私の日記の記録が一部表示されます。',
+        description:
+          'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
+      },
     ],
   },
 };

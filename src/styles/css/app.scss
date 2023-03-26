@@ -3,6 +3,52 @@
   src: local('Inter'), url('./../fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
 }
 
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 100;
+//   src: local('Inter'), url('./../fonts/Inter-Thin.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 200;
+//   src: local('Inter'), url('./../fonts/Inter-ExtraLight.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 300;
+//   src: local('Inter'), url('./../fonts/Inter-Light.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 400;
+//   src: local('Inter'), url('./../fonts/Inter-Regular.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 500;
+//   src: local('Inter'), url('./../fonts/Inter-Medium.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 600;
+//   src: local('Inter'), url('./../fonts/Inter-SemiBold.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 700;
+//   src: local('Inter'), url('./../fonts/Inter-Bold.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 800;
+//   src: local('Inter'), url('./../fonts/Inter-ExtraBold.ttf') format('ttf');
+// }
+// @font-face {
+//   font-family: 'Inter';
+//   font-weight: 900;
+//   src: local('Inter'), url('./../fonts/Inter-Black.ttf') format('ttf');
+// }
+
 @font-face {
   font-family: 'NotoSansJP';
   font-weight: 900;
@@ -77,3 +123,4 @@ body {
 @import './layout.scss';
 @import './pages/auth.scss';
 @import './pages/home.scss';
+@import './pages/my-record.scss';

@@ -31,3 +31,23 @@ export interface MealHistoryDto {
 export interface MealHistoryResponseBodyDto {
   list: MealHistoryDto[];
 }
+
+export interface ExerciseDto {
+  title: string;
+  timeInMinutes: number;
+  calories: number;
+}
+
+export interface MyExerciseResponseBodyDto {
+  list: ExerciseDto[];
+}
+
+export interface DiaryDto {
+  time: Date;
+  title: string;
+  description: string;
+}
+
+export interface MyDiaryResponseBodyDto {
+  list: DiaryDto[];
+}
